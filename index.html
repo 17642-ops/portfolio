@@ -1,131 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Portfolio น้องพัดนะริน</title>
-</head>
-<body bgcolor="black">
-<h1>หน้าหลัก</h1>
-<a href"personal.html">ประวัติส่วนตัว</a>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าหลัก | My Portfolio</title>
-    <style>
-        /* สไตล์เบื้องต้นเพื่อความสวยงาม */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #34495e;
-            text-align: center;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            display: inline-block;
-            transition: background 0.3s;
-            border-radius: 4px;
-        }
-        nav a:hover, nav a.active {
-            background-color: #1abc9c;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            text-align: center;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #1abc9c;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #1abc9c;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background-color: #16a085;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #2c3e50;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.9em;
-        }
-        /* ปรับระยะขอบล่างของหน้าเว็บไม่ให้โดน footer บัง */
-        body { padding-bottom: 60px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio ของ ภัทร์นรินทร์ เขียดจะโปะ</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>ยินดีต้อนรับสู่ Portfolio ของฉัน</h1>
-        <p>เว็บไซต์รวบรวมผลงาน ประวัติ และกิจกรรมต่างๆ</p>
-    </header>
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">กาย</span>
+    ภัทร์นรินทร์ เขียดจะโปะ
+  </div>
+  <button class="nav-toggle" aria-label="เปิดเมนู">&#9776;</button>
+  <ul class="navlinks">
+    <li><a href="index.html" aria-current="page">หน้าหลัก</a></li>
+    <li><a href="personal.html">ประวัติส่วนตัว</a></li>
+    <li><a href="education.html">ประวัติการศึกษา</a></li>
+    <li><a href="activities.html">ผลงาน</a></li>
+    <li><a href="contact.html">ติดต่อ</a></li>
+  </ul>
+</nav>
 
-    <nav>
-        <a href="index.html" class="active">หน้าหลัก</a>
-        <a href="personal.html">ประวัติส่วนตัว</a>
-        <a href="education.html">ประวัติการศึกษา</a>
-        <a href="activities.html">ผลงานและกิจกรรม</a>
-        <a href="contact.html">ช่องทางการติดต่อ</a>
-    </nav>
-
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์ของคุณ" class="profile-img">
-        
-        <h2>สวัสดีครับ/ค่ะ! ฉันชื่อ [ชื่อ-นามสกุลของคุณ]</h2>
-        <p style="font-size: 1.2em; color: #7f8c8d;">นักเรียนชั้นมัธยมศึกษาปีที่ 6 โรงเรียน [ชื่อโรงเรียนของคุณ]</p>
-        
-        <hr style="border: 0; height: 1px; background: #eee; margin: 30px 0;">
-        
-        <p>ยินดีต้อนรับเข้าสู่พื้นที่จัดแสดงผลงานและความสามารถของฉัน เว็บไซต์นี้สร้างขึ้นมาเพื่อแนะนำตัวตน ไลฟ์สไตล์ ประวัติการศึกษา และกิจกรรมต่างๆ ที่ฉันได้ทำระหว่างเรียนในระดับชั้นมัธยมปลาย</p>
-        
-        <p>คุณสามารถเลือกดูรายละเอียดในหัวข้อต่างๆ ได้จากเมนูด้านบน หรือกดปุ่มด้านล่างเพื่อทำความรู้จักฉันให้มากขึ้นได้เลยครับ/ค่ะ</p>
-        
-        <a href="personal.html" class="btn">ทำความรู้จักฉันเพิ่มขึ้น</a>
+<main>
+  <section class="hero">
+    <div>
+      <h1>Portfolio of <br><span class="accent">Patnarin Kietchapo</span></h1>
+      <p class="lede">นักเรียนชั้นมัธยมศึกษาปีที่ 6 เว็บไซต์นี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา และผลงานของฉันไว้ในที่เดียว เพื่อใช้แนะนำตัวสำหรับการศึกษาต่อและโอกาสต่างๆ</p>
+      <div class="hero-cta">
+        <a href="personal.html" class="btn btn-solid">ดูประวัติส่วนตัว</a>
+        <a href="contact.html" class="btn btn-ghost">ช่องการติดต่อ</a>
+      </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 [ชื่อของคุณ]. All Rights Reserved. Powered by GitHub Pages</p>
-    </footer>
+    <div class="id-card">
+      <div class="id-card-top">
+        <span class="school">STUDENT PORTFOLIO ID</span>
+        <span class="gold-dot"></span>
+      </div>
+      <div class="id-card-body">
+        <!-- รูปนี้ใช้ไฟล์ "กาย.png" ที่จะอัปโหลดไว้ในโฟลเดอร์เดียวกับ index.html -->
+        <div class="id-photo" style="background-image:url('กาย.png');"></div>
+        <div class="id-info">
+          <div class="name">ภัทร์นรินทร์ เขียดจะโปะ</div>
+          <div class="role">ชั้นมัธยมศึกษาปีที่ 6</div>
+          <div class="role">ชื่อเล่น: กาย</div>
+        </div>
+      </div>
+      <div class="id-card-strip"></div>
+    </div>
+  </section>
 
+  <section>
+    <div class="grid-links">
+      <a class="link-card" href="personal.html">
+        <span class="num">01</span>
+        <h3>ประวัติส่วนตัว</h3>
+        <p>ข้อมูลทั่วไปและรูปภาพของฉัน</p>
+      </a>
+      <a class="link-card" href="education.html">
+        <span class="num">02</span>
+        <h3>ประวัติการศึกษา</h3>
+        <p>เส้นทางการเรียนตั้งแต่อดีตถึงปัจจุบัน</p>
+      </a>
+      <a class="link-card" href="activities.html">
+        <span class="num">03</span>
+        <h3>ผลงาน</h3>
+        <p>ผลงานและกิจกรรมที่เคยทำ</p>
+      </a>
+      <a class="link-card" href="contact.html">
+        <span class="num">04</span>
+        <h3>ติดต่อ</h3>
+        <p>ช่องทางการติดต่อฉัน</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 ภัทร์นรินทร์ เขียดจะโปะ — Portfolio Website</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
