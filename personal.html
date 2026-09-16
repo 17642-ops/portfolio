@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>ประวัติส่วนตัว</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติส่วนตัว | ภัทร์นรินทร์ เขียดจะโปะ</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>ประวัตฺส่วนตัว</h1>  
-<p>
-ชื่อ นายภัทร์นรินทรื เขียดจะโปะ
-  ชื่อเล่น กาย
-  วันเกิด 13 กันยายน พ.ศ.2551
-  ปัจจุบันอายุ 17ปี
-  ปัจจุบันศึกษาอยู๋โรงเรียนพานทอง
-</p>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">กาย</span>
+    ภัทร์นรินทร์ เขียดจะโปะ
+  </div>
+  <button class="nav-toggle" aria-label="เปิดเมนู">&#9776;</button>
+  <ul class="navlinks">
+    <li><a href="index.html">หน้าหลัก</a></li>
+    <li><a href="personal.html" aria-current="page">ประวัติส่วนตัว</a></li>
+    <li><a href="education.html">ประวัติการศึกษา</a></li>
+    <li><a href="activities.html">ผลงาน</a></li>
+    <li><a href="contact.html">ติดต่อ</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="page-header">
+    <span class="eyebrow">01 · About</span>
+    <h1>ประวัติส่วนตัว</h1>
+  </header>
+
+  <div class="card">
+    <div class="profile-block">
+      <!-- รูปโปรไฟล์: ใช้ไฟล์ "กาย.png" ที่จะอัปโหลดไว้ในโฟลเดอร์เดียวกับ personal.html -->
+      <div class="profile-photo" style="background-image:url('กาย.png');"></div>
+
+      <dl class="info-list">
+        <dt>ชื่อ</dt><dd>ภัทร์นรินทร์ เขียดจะโปะ</dd>
+        <dt>ชื่อเล่น</dt><dd>กาย</dd>
+        <dt>วันเกิด</dt><dd>13/09/2551</dd>
+        <dt>เบอร์โทร</dt><dd>0814598651</dd>
+        <dt>ส่วนสูง</dt><dd>180 ซม.</dd>
+        <dt>น้ำหนัก</dt><dd>83 กก.</dd>
+      </dl>
+    </div>
+  </div>
+</main>
+
+<footer>&copy; 2026 ภัทร์นรินทร์ เขียดจะโปะ — Portfolio Website</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
